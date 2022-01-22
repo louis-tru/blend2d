@@ -1052,7 +1052,7 @@ UNIT(gradient) {
 
       if (capacity != g.capacity()) {
         size_t implSize = BLGradientPrivate::implSizeFromCapacity(g.capacity()).value();
-        INFO("Capacity increased from %zu to %zu [ImplSize=%zu]\n", capacity, g.capacity(), implSize);
+        INFO("  Capacity increased from %zu to %zu [ImplSize=%zu]\n", capacity, g.capacity(), implSize);
 
         capacity = g.capacity();
       }
